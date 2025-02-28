@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            padding-top: 0px;
+        }
+
+        header {
+            background-color: rgba(35, 80, 17, 0.224);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .text-container {
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+           
+            z-index: 1;
+            text-align: center; /* Center text */
+        }
+
+        .text-container h1 {
+            font-size: 55px;
+            margin-bottom: 20px; /* Add margin for button spacing */
+            color: #9ae4b3;
+        }
+
+        .text-container a {
+            background-color: #00ff4c;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block; /* Make it behave like a block for centering */
+            transition: background-color 0.3s ease;
+        }
+
+        .text-container a:hover {
+            background-color: #3bffa3;
+        }
+
+        .bg {
+            position: relative;
+        }
+
+        .bg img {
+            width: 100%;
+            height: medium;
+            display: block;
+        }
+
+        .bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(44, 43, 43, 0.4);
+            pointer-events: none;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .section {
+            width: 45%;
+            margin: 10px;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 10px;
+            height: 100%;
+            background-color: rgb(0, 255, 85);
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img style="width: 50px; height: 50px; border-radius: 50%; margin: 0px;" class="image" src="logo.png" alt="MyLogo">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="festivals.html">Festival</a></li>
+                <li><a href="tourist.html">Tourist</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="text-container">
+            <h1>About Kapatagan</h1>
+            <a href="https://lungsodsakapatagan.gov.ph/quick-facts-2/ " target="_blank">Learn more</a>
+        </div>
+        <div class="bg">
+            <img src="ri.jpg" alt="asd">
+        </div>
+    </main>
+    <div class="content">
+        <div class="section">
+            <h2>About</h2>
+            <p>Kapatagan, officially the Municipality of Kapatagan (Maranao: Inged a Kapatagan; Cebuano: Lungsod sa Kapatagan; Tagalog: Bayan ng Kapatagan), is a 1st class municipality in the province of Lanao del Norte, Philippines. According to the 2020 census, it has a population of 62,571 people.</p>
+        </div>
+        <div class="section">
+            <h2>Etymology</h2>
+            <p>Kapatagan is derived from the Visayan word "patag" meaning plain or valley.</p>
+        </div>
+        <div class="section">
+            <h2>Geography</h2>
+            <p>Kapatagan has a total land area of 25,048.41 hectares, including the area now being contested by the municipality of Lala with an approximate area of 759 hectares.</p>
+        </div>
+        <div class="section">
+            <h2>Topography</h2>
+            <p>On the southern and eastern sides of the locality are mountains. Offsetting the mountain is the presence of flat coastal lands and valley.</p>
+            <p>It has five major rivers that flow to Panguil Bay, namely: Maranding, Panoloon, Butadon, Kidalos, and Balili.</p>
+            <p>The Cathedral Falls and Santa Cruz waterfalls are located at Barangays Cathedral Falls, Santa Cruz, and Waterfalls respectively. At present, <br> the spring supplies water into Poblacion and some neighboring barangays.</p>
+        </div>
+    </div>
+</body>
+</html>
